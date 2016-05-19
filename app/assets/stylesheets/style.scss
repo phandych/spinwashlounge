@@ -234,6 +234,8 @@
 	.home{
 		background:url(../assets/1.jpg) center center fixed;
 		position: relative;
+		background-position: bottom;
+		background-size: cover;
 	}
 
 	.home:after{
