@@ -707,9 +707,15 @@
     position: relative;
     text-align: center;
     z-index: 10;
-    padding: 100px 0;
+    padding: 80px 0;
     height: auto;
 
+    .logo {
+
+    	img {
+    		width: 150px;
+    	}
+    }
 }
 
 	.slide-text{
@@ -879,6 +885,35 @@
 	.tooltip.right .tooltip-arrow{
 		border-right-color:#494949 !important;
 	}
+
+	/* Features */
+	.f-box{
+		text-align:center;
+		cursor: default;
+		margin:60px auto 0;
+	}
+
+	.f-icon i{
+		font-size: 35px;
+		color:#616161;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	.f-box .feature-head{
+		margin:15px auto 10px;
+		font-size:18px;
+	}
+
+	.f-box .feature-text{
+		font-size:13px;
+	}
+
+	.f-box:hover .f-icon i{
+		color:#3498db;
+	}
+
 
 /* Contact */
 
@@ -1050,3 +1085,4 @@
 	#site-socials .top-button:hover{
 		color:#3498db;
 	}
+
