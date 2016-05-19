@@ -1,3 +1,38 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-<%= image_tag 'logo', alt: "logo" %>
+<%= render 'pageloader' %>
+<%= render 'navigation' %>
+<!-- Home Section -->
+<section id="home">   
+<div id="slides" class="home parallax pattern-black">
+  <div class="home-details">
+    <!-- Your Logo -->
+    <div class="logo">
+      <img src="assets/logo-icon.png" alt="Logo" />
+    </div>
+    <div class="hometexts">
+        <!-- Slide Texts -->
+        <ul class="slide-text condensed">
+          <li class="hometext bold uppercase">Welcome to <span class="colored"> oxygen</span></li>
+          <li class="hometext bold uppercase">We Love to <span class="colored"> Design</span></li>
+          <li class="hometext bold uppercase">We Are <span class="colored"> Creative</span></li>
+        </ul>
+    </div>
+    <!-- Fixed Text -->
+    <h1 class="fixed-text uppercase bold condensed">the goods you need now !</h1>
+    <!-- Home Categories -->
+    <ul class="home-categories">
+      <li class="h-item uppercase ">web design</li>
+      <li class="h-item uppercase ">one page</li>
+      <li class="h-item uppercase ">analystic</li>
+      <li class="h-item uppercase ">photography</li>
+      <li class="h-item uppercase ">cool animations</li>
+    </ul>
+    <!-- Bottom Arrow -->
+    <a href="#about" class="home-arrow scroll uppercase bold">
+      <img src="assets/bottom-arrow.png" alt="bottom" />
+      <span>what we do ?</span>
+    </a>
+  </div><!-- End Home Texts -->
+</div><!-- End Home Details -->
+</section><!-- End Home Section -->
+
+
