@@ -171,6 +171,10 @@
 		color:white;
 	}
 
+	.black {
+		color: black;
+	}
+
 	.gray1{
 		color:#a8a7a7;
 	}
@@ -180,7 +184,7 @@
 	}
 
 	.colored{
-		color: #3498db;
+		color: #00bcde;
 	}
 
 	.colored-bg{
@@ -192,7 +196,7 @@
 	}
 
 	.colored-border{
-		border-color: #3498db;
+		border-color: #00bcde;
 	}
 
 	.colored-border-left{
@@ -305,12 +309,13 @@
 	}
 
 	.pattern-black:after{
-		background: url(../assets/pattern-black.png) repeat;
+		background: #000;
 		content:'';
 		width: 100%;
 		height: 100%;
 		top:0;
 		left:0;
+		opacity: 0.4;                                                                                                                                                                                      
 		position: absolute;
 	}
 
@@ -568,14 +573,14 @@
 
 	.nav li a:hover{
 		background: transparent !important;
-		border-top:2px solid #3498db;
-		color:#3498db;
+		border-top:2px solid #00bcde;
+		color:#00bcde;
 	}
 
 	.nav li.active a{
 		background: transparent;
-		border-top:2px solid #3498db;
-		color:#3498db;
+		border-top:2px solid #00bcde;
+		color:#00bcde;
 	}
 
 	.nav li a:focus{
@@ -738,8 +743,9 @@
 
 	.fixed-text{
 		font-size: 60px;
-		color:#a8a8a8;
+		color:#000;
 		margin:0;
+		opacity: 0.7
 	}
 
 
@@ -751,7 +757,7 @@
 	}
 
 	.h-item{
-		color:#b8b7b7;
+		color:#000;
 		padding:5px 20px 5px 13px;
 		width: auto;
 		font-size: 13px;
@@ -761,7 +767,8 @@
 
 	.home-arrow{
 		display: block;
-		color:#b8b7b7;
+		color:#000;
+		opacity: 0.8;
 		width:150px;
 		margin:10px auto;
 		-webkit-transition: all 0.5s;
@@ -775,7 +782,7 @@
 	}
 
 	.home-arrow:hover{
-		color:white;
+		color:#00bcde;
 	}
 
 
@@ -784,8 +791,15 @@
 
 	#services{
 		background:url(../assets/i1.jpg) center center fixed;
-		padding:55px 0;
+		background-size: cover;
+		background-position: top;
 		overflow: hidden;
+	}
+
+	.service-content {
+		background: #000;
+		opacity: 0.7;
+		padding: 55px 0;
 	}
 
 /* Service Boxes */
@@ -911,7 +925,7 @@
 	}
 
 	.f-box:hover .f-icon i{
-		color:#3498db;
+		color:#00bcde;
 	}
 
 
@@ -919,6 +933,13 @@
 
 	#contact{
 		background:url(../assets/i5.jpg) center fixed;
+		background-size: cover;
+		background-position: top;
+	}
+
+	.contact-content {
+		background:#000;
+		opacity: 0.7;
 		padding:10px 0 10px;
 	}
 
@@ -1008,7 +1029,7 @@
 	}
 
 	.form-btn:hover{
-		background:#3498db;
+		background:#00bcde;
 		color: white;
 		border:1px solid #3498db;
 	}

@@ -122,11 +122,24 @@ Active Navigation Calling
 =============================================== */
 
 
-$('body').scrollspy({ 
+
+
+$(function () {
+	'use stric'
+  $('body').scrollspy({ 
 	target: '.nav-menu',
 	offset: 95
 })
+})
 
+
+ /* ==============================================
+Tooltips Calling
+=============================================== */	
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
 
 
