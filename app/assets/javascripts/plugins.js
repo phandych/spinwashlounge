@@ -9,6 +9,19 @@ $(window).load(function() {
 	$("#pageloader").delay(1200).fadeOut("slow");
 });
 
+/* ==============================================
+Drop Down Menu Fade Effect
+=============================================== */	
+$(document).ready(function(){
+	$('.nav-toggle').hover(function() {
+	'use strict';
+    $(this).find('.dropdown-menu').first().stop(true, true).slideDown(250);
+    }, function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).slideUp(250)
+ });
+});
+
+
 
 /* ==============================================
 Navigation Scroll Effect

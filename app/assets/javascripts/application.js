@@ -17,3 +17,7 @@
 //= require_tree .
 
 
+
+
+$(document).on "page:change", ->
+  alert "page has loaded!"

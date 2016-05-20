@@ -18,6 +18,16 @@
         <li><a href="#services" class="scroll">services</a></li>
         <li><a href="#features" class="scroll">features</a></li>
         <li><a href="#contact" class="scroll">contact</a></li>
+        <% if current_user && current_user.admin? %>
+        <li class="dropdown-toggle nav-toggle"><a href="#" class="scroll">admin<b data-toggle="dropdown" class="caret"></b></a>
+            <!-- DropDown Menu -->
+            <ul class="dropdown-menu uppercase gray-border" style="display: none;">
+              <li><%= link_to "Edit Information", edit_user_path(current_user) %></li>
+              <li><a href="blog_01.html">With Sidebar Right</a></li>
+              <li><%= link_to "Logout", logout_path, method: :delete %></li>
+            </ul><!-- End DropDown Menu -->
+          </li>
+          <% end %>
       </ul>
     </div><!-- End Navigation Menu -->
   </div><!-- End Navigation Inner -->
