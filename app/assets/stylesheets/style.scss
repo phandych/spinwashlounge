@@ -227,8 +227,8 @@
 	#home{
 		position: relative;
 		width: 100%;
-		height: auto;
 		top:0;
+		height: 100%;
 	}
 
 	.home{
@@ -236,6 +236,7 @@
 		position: relative;
 		background-position: bottom;
 		background-size: cover;
+		height: 100%;
 	}
 
 	.home:after{
