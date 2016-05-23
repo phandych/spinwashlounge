@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
@@ -19,5 +20,3 @@
 
 
 
-$(document).on "page:change", ->
-  alert "page has loaded!"
