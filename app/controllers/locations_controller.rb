@@ -2,10 +2,12 @@ class LocationsController < ApplicationController
   before_action :admin_user, only: [:edit, :update]
 
   def edit
+  	@user = User.find(params[:id])
   	@location = Location.find(params[:id])
   end
 
   def update
+  	@user = User.find(params[:id])
   	@location = Location.find(params[:id])
   	if @location.update(location_params)
   		flash[:success] = "Location edited"

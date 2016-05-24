@@ -5,6 +5,7 @@
 	<%= simple_form_for(@location, html: {class: "admin_form col-xs-4 animated fadeInLeft visible"} ) do |f| %>
 		<h2>Address</h2>
 		<%= f.input :address, required: true, placeholder: "Phone", label: false %>
+		<%= f.hidden_field :user_id, required: true, value: @user.id %>
 		<div class="divider"></div>
 		<%= @location.longitude %>, <%= @location.latitude %>
 		<div class="divider"></div>
