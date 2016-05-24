@@ -96,3 +96,12 @@
 				$('.nav-menu').slideToggle("2000")
 		$('.mini-nav-button').on 'click', ->
 			$('.nav-menu').slideToggle("9000")
+
+
+	# Google_Map
+	$ ->
+		$( ".google-map-big-button" ).on 'click', ->
+			$( "#map-button" ).toggleClass( "close-map-button", "open-map-button", 1000 )
+			$( "#map-button" ).toggleClass( "open-map-button", "close-map-button", 1000 )
+			$( "#map" ).toggleClass( "close-map", "open-map", 1000 )
+			$( "#map" ).toggleClass( "open-map", "close-map", 1000 )

@@ -932,7 +932,11 @@
 		background:url(../assets/i5.png) center fixed;
 		background-size: cover;
 		background-position: bottom;
-		padding:10px 0 10px;
+		padding:0px 0 10px;
+
+		.inner {
+			padding: 60px 0;
+		}
 	}
 
 	.contact-text{
@@ -1130,3 +1134,77 @@
     display: block;
     padding: 10px;
 }
+
+/* Google Map */
+
+	#map{
+		position: relative;
+		overflow: hidden;
+		-webkit-transition: all 0.7s;
+		-moz-transition: all 0.7s;
+		transition: all 0.7s;
+	}
+
+/* Open and Close Styles */
+
+	.close-map{
+		height: 80px;
+	}
+
+	.open-map{
+		height: 600px;
+	}
+
+/* Open and Close Button Styles */
+
+	#map .google-map-big-button{
+		width:100%;
+		display: block;
+		height: auto;
+		text-align: center;
+		background: #151515;
+		font-size: 20px;
+		position: relative;;
+		z-index: 2;
+		cursor: pointer;
+		-webkit-transition: all 0.7s;
+		-moz-transition: all 0.7s;
+		transition: all 0.7s;
+	}
+
+	.close-map-button{
+		padding:30px;
+		opacity: 1;
+	}
+
+	.open-map-button{
+		padding:10px;
+		opacity: 0.5;
+	}
+
+	#map .google-map-big-button:hover{
+		background:#3498db;
+		color:white;
+	}
+
+/* Google Map Div */
+
+	#map #google-map{
+		height: 500px;
+		display: block;
+		position: absolute;
+		top:0;
+		width: 100%;
+		z-index: 1;
+		-webkit-transition: all 0.7s;
+		-moz-transition: all 0.7s;
+		transition: all 0.7s;
+	}
+
+	.close-map #google-map{
+		opacity: 0;
+	}
+
+	.open-map #google-map{
+		opacity: 1;
+	}

@@ -1,0 +1,24 @@
+	<div id="map" class="container close-map">
+		<!-- Open/Close Button -->
+		<a id="map-button" class="google-map-big-button uppercase bold condensed white scroll close-map-button" href="#map" >where are we ? click for google map <i class="fa fa-caret-down"></i></a>
+	
+		<!-- Google Map -->
+		<div id="google-map"></div>
+	</div><!-- End Google Map Section -->
+	
+
+
+ 	<script type="text/javascript">
+
+		var map;
+		function initMap() {
+		  map = new google.maps.Map(document.getElementById('google-map'), {
+		    center: {lat: <%= @location.latitude %>, lng: <%= @location.longitude %>},
+		    zoom: 15
+		  });
+		}
+
+    </script>
+     <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7oy-SKMpdyYKhzX8vXKbL_XcgfwiDBzc&callback=initMap">
+    </script>

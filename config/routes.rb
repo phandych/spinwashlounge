@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'admin' => 'sessions#new'
 
   post 'admin' => 'sessions#create'
@@ -10,6 +11,8 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   resources :users
+
+  resources :locations, only: [:edit, :update]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
