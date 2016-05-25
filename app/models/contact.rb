@@ -2,7 +2,7 @@ class Contact < MailForm::Base
   attribute :name,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :file,      :attachment => true
-
+  attribute :subject,   :validate => true
   attribute :message
   attribute :nickname,  :captcha  => true
 
@@ -10,8 +10,8 @@ class Contact < MailForm::Base
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "My Contact Form",
-      :to => "phandy.chandra@gmail.com",
+      :subject => %("#{subject}"),
+      :to => User.where(admin: true).map(&:email_support),
       :from => %("#{name}" <#{email}>)
     }
   end
