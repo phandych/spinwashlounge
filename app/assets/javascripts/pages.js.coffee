@@ -105,3 +105,4 @@
 			$( "#map-button" ).toggleClass( "open-map-button", "close-map-button", 1000 )
 			$( "#map" ).toggleClass( "close-map", "open-map", 1000 )
 			$( "#map" ).toggleClass( "open-map", "close-map", 1000 )
+
