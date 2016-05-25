@@ -11,11 +11,16 @@
  	<script type="text/javascript">
 
 		var map;
+		var myCenter = {lat: <%= @location.latitude %>, lng: <%= @location.longitude %>};
 		function initMap() {
 		  map = new google.maps.Map(document.getElementById('google-map'), {
-		    center: {lat: <%= @location.latitude %>, lng: <%= @location.longitude %>},
+		    center: myCenter,
 		    zoom: 15
 		  });
+		var marker = new google.maps.Marker({
+			position: myCenter,
+			map: map,
+		});
 		}
 
     </script>
