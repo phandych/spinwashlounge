@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  post '/' => 'contacts#create'
+
   get 'admin' => 'sessions#new'
 
   post 'admin' => 'sessions#create'

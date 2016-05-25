@@ -55,3 +55,5 @@ gem 'font-awesome-rails'
 gem 'jquery-turbolinks'
 
 gem 'geocoder'
+
+gem 'mail_form'

@@ -4,7 +4,13 @@
     <%= render 'google_map' %>
     <!-- Contact Inner -->
     <div class="inner contact">
+        <%= simple_form_for @contact, url: root_path do |f| %>
+          <%= f.input :name %>
+          <%= f.input :email %>
+          <%= f.input :message %>
 
+          <%= f.button :submit, "Send Message" %>
+        <% end %>
       <!-- Header -->
       <h1 class="header semibold white">Get In <span class="extrabold">Touch</span></h1>
 
