@@ -4,14 +4,6 @@
     <%= render 'google_map' %>
     <!-- Contact Inner -->
     <div class="inner contact">
-        <%= simple_form_for @contact, url: root_path do |f| %>
-          <%= f.input :name %>
-          <%= f.input :email %>
-          <%= f.input :subject %>
-          <%= f.input :message %>
-
-          <%= f.button :submit, "Send Message" %>
-        <% end %>
       <!-- Header -->
       <h1 class="header semibold white">Get In <span class="extrabold">Touch</span></h1>
 
@@ -21,30 +13,30 @@
       <!-- Form Area -->
       <div class="contact-form">
         <!-- Form -->
-        <form id="contact-us" method="post" action="/">
-          <!-- Left Inputs -->
-          <div class="col-xs-6 animated" data-animation="fadeInLeft" data-animation-delay="300">
-            <!-- Name -->
-            <input type="text" name="name" id="name" required="required" class="form light" placeholder="Name" />
-            <!-- Email -->
-            <input type="email" name="mail" id="mail" required="required" class="form light" placeholder="Email" />
-            <!-- Subject -->
-            <input type="text" name="subject" id="subject" required="required" class="form light" placeholder="Subject" />
-          </div><!-- End Left Inputs -->
-          <!-- Right Inputs -->
-          <div class="col-xs-6 animated" data-animation="fadeInRight" data-animation-delay="300">
-            <!-- Message -->
-            <textarea name="message" id="message" class="form textarea light"  placeholder="Message"></textarea>
-          </div><!-- End Right Inputs -->
-          <!-- Bottom Submit -->
-          <div class="relative fullwidth col-xs-12">
-            <!-- Send Button -->
-            <button type="submit" id="submit" name="submit" class="form-btn light">Send Message</button> 
-          </div><!-- End Bottom Submit -->
+        <%= simple_form_for @contact, url: root_path do |f| %>
+        <!-- Left Inputs -->
+        <div class="col-xs-6 animated" data-animation="fadeInLeft" data-animation-delay="300">
+          <!-- Name -->
+          <%= f.input :name, required: true, placeholder: "Name", label: false, input_html: { class: "form light" } %>
+          <!-- Email -->
+          <%= f.input :email, required: true, placeholder: "Email", label: false, input_html: { class: "form light" } %>
+          <!-- Subject -->
+          <%= f.input :subject, required: true, placeholder: "Subject", label: false, input_html: { class: "form light" } %>
+        </div><!-- End Left Inputs -->
+        <!-- Right Inputs -->
+        <div class="col-xs-6 animated" data-animation="fadeInRight" data-animation-delay="300">
+          <!-- Message -->
+          <%= f.input :message, as: :text, required: true, placeholder: "Message", label: false, input_html: { class: "form textarea light" } %>
+        </div><!-- End Right Inputs -->
+        <!-- Bottom Submit -->
+        <div class="relative fullwidth col-xs-12">
+          <!-- Send Button -->
+          <%= f.button :submit, "Send Message", class: "form-btn light" %>
+        </div><!-- End Bottom Submit -->
           <!-- Clear -->
           <div class="clear"></div>
-        </form>
-
+        <% end %>
+        
         <!-- Your Mail Message -->
         <div class="mail-message-area">
           <!-- Message -->
