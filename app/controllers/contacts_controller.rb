@@ -6,6 +6,7 @@ class ContactsController < ApplicationController
   		redirect_to "/#contact"
   	else
   		flash.now[:error] = "Cannot send message"
+  		redirect_to '/#contact'
   	end
   end
 end
