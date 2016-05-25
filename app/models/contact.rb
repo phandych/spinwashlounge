@@ -10,7 +10,7 @@ class Contact < MailForm::Base
   # in ActionMailer accepts.
   def headers
     {
-      :subject => %("#{subject}"),
+      :subject => %(#{subject}),
       :to => User.where(admin: true).map(&:email_support),
       :from => %("#{name}" <#{email}>)
     }
