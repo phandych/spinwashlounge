@@ -1,6 +1,6 @@
 Recaptcha.configure do |config|
-  config.public_key  = '6LdE-yATAAAAALA70cpWQW3mLey4oDZLGAcEgkBU'
-  config.private_key = '6LdE-yATAAAAACBnmd2xjZt3D2oDDLDL6ordK32G'
+  config.public_key  = ENV['RECAPTCHA_PUBLIC_KEY']
+  config.private_key = ENV['RECAPTCHA_PRIVATE_KEY']
   # Uncomment the following line if you are using a proxy server:
   # config.proxy = 'http://myproxy.com.au:8080'
   # config.disable_ssl_verification # if you do not want to verify ssl connection
