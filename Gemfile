@@ -57,3 +57,7 @@ gem 'jquery-turbolinks'
 gem 'geocoder'
 
 gem 'mail_form'
+
+gem "recaptcha", require: "recaptcha/rails"
+
+gem 'dotenv-rails', :groups => [:development, :test]
