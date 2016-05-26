@@ -3,7 +3,7 @@ class LocationsController < ApplicationController
 
   def edit
   	@user = User.find(params[:id])
-  	@location = Location.find(params[:id])
+  	@location = Location.first
   end
 
   def update
