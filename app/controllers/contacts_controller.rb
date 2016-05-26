@@ -2,7 +2,7 @@ class ContactsController < ApplicationController
   def create
   	@contact = Contact.new(params[:contact])
   	@contact.request = request
-  	if @contact.deliver
+  	if verify_recaptcha(model: @contact) && @contact.deliver
       flash[:success] = "Message has send"
   		redirect_to "/#contact"
   	else
