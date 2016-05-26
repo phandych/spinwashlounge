@@ -1208,3 +1208,32 @@
 	.open-map #google-map{
 		opacity: 1;
 	}
+
+/* Footer */
+
+	.footer{
+		padding:45px;
+		text-align: center;
+		background: #191919;
+
+		.footer-logo {
+			width: 50px;
+		}
+	}
+
+	.footer h2.company-name{
+		margin-top:0;
+		padding-top:0;
+		font-size:35px;
+	}
+
+	.footer p.copyright{
+		margin-bottom:0;
+		padding-bottom:0;
+		color:#8b8b8b;
+		font-size:14px;
+	}
+
+	.footer p.copyright a:hover{
+		color:#3498db;
+	}

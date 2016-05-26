@@ -1,0 +1,42 @@
+<section id="site-socials" class="no-padding white-bg">
+		<div class="site-socials inner no-padding">
+			<!-- Socials -->
+			<div class="socials">
+				<!-- Facebook -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-facebook"></i>
+				</a>
+				<!-- Twitter -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-twitter"></i>
+				</a>
+				<!-- Google Plus -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-google-plus"></i>
+				</a>
+				<!-- Linkedin -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-linkedin"></i>
+				</a>
+				<!-- Instagram -->
+				<a href="#" class="social">
+					<i class="fa fa-instagram"></i>
+				</a>
+				<!-- Vimeo -->
+				<a href="#" target="_blank" class="social">
+					<i class="fa fa-vimeo-square"></i>
+				</a>
+			</div>
+			<!-- Adress, Mail -->
+			<div class="address">
+				<!-- Phone Number, Mail -->
+				<p>(021) - <%= @user.phone %> & <a href="mailto:<%= @user.email_support %>" class="bold dark"><%= @user.email_support %></a></p>
+				<!-- Adress -->
+				<p><%= @location.address %>, <span class="bold colored"><%= @location.city %></span></p>
+				<!-- Top Button -->
+				<a href="#home" class="scroll top-button">
+					<i class="fa fa-angle-double-up"></i>
+				</a>
+			</div><!-- End Adress, Mail -->
+		</div><!-- End Inner -->
+	</section><!-- End Site Socials and Address -->
